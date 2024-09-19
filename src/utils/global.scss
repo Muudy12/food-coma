@@ -1,0 +1,13 @@
+@mixin logo-image($path) {
+  background-image: url($path);
+  height: 100%;
+  width: 7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8rem 8rem;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

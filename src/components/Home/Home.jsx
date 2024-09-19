@@ -1,21 +1,19 @@
-import "./FoodComa.scss";
-import FoodComaLogo from "../../assets/food-coma/logos/food-coma-logo.png";
-import MuPortLogo from "../../assets/logos/mu-port.png";
+import "./Home.scss";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ThinkEmoji from "../../assets/food-coma/images/thinkingFace-cartoon-rb.png";
-import DefaultSpin from "../../assets/food-coma/images/defaultSpin-rb.png";
-import DownArrow from "../../assets/food-coma/images/arrowDown-cartoon-rb.png";
-import RamenImg from "../../assets/food-coma/images/ramen-cartoon-rb.png";
-import SaladImg from "../../assets/food-coma/images/salad-cartoon-rb.png";
-import PastaImg from "../../assets/food-coma/images/pasta-cartoon-rb.png";
-import SmoothieImg from "../../assets/food-coma/images/smoothie-cartoon-rb.png";
-import CupcakeImg from "../../assets/food-coma/images/cupcake-cartoon-rb.png";
-import BurgerImg from "../../assets/food-coma/images/burger-cartoon-rb.png";
-import SteakImg from "../../assets/food-coma/images/steak-cartoon-rb.png";
-import PizzaImg from "../../assets/food-coma/images/pizza-cartoon-rb.png";
+import ThinkEmoji from "../../assets/images/thinkingFace-cartoon-rb.png";
+import DefaultSpin from "../../assets/images/defaultSpin-rb.png";
+import DownArrow from "../../assets/images/arrowDown-cartoon-rb.png";
+import RamenImg from "../../assets/images/ramen-cartoon-rb.png";
+import SaladImg from "../../assets/images/salad-cartoon-rb.png";
+import PastaImg from "../../assets/images/pasta-cartoon-rb.png";
+import SmoothieImg from "../../assets/images/smoothie-cartoon-rb.png";
+import CupcakeImg from "../../assets/images/cupcake-cartoon-rb.png";
+import BurgerImg from "../../assets/images/burger-cartoon-rb.png";
+import SteakImg from "../../assets/images/steak-cartoon-rb.png";
+import PizzaImg from "../../assets/images/pizza-cartoon-rb.png";
 
-function FoodComa() {
+function Home() {
   const navigate = useNavigate();
   const [isSpin, setIsSpin] = useState(false);
   const spinWheel = useRef();
@@ -37,9 +35,6 @@ function FoodComa() {
   const pizza = useRef();
 
   useEffect(() => {
-    const link = document.querySelector("link[rel~='icon'");
-    link.href = FoodComaLogo;
-    document.title = "Food Coma";
     const wheelElement = spinWheel.current;
 
     const stopSpin = () => {
@@ -211,24 +206,6 @@ function FoodComa() {
   return (
     <>
       <div className="food-coma">
-        <header className="food-coma__header header">
-          <nav className="header__nav nav">
-            <img
-              className="nav__mu-port"
-              src={MuPortLogo}
-              alt="Mu Portfolio Logo"
-              onClick={() => navigate("/")}
-            />
-            <ul className="nav__list">
-              <li className="nav__list-item">
-                <a className="" href="/food-coma">
-                  Dashboard
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
         <div className="food-coma__main main">
           <div className="main__title">
             <h1 className="main__title-header">
@@ -324,4 +301,4 @@ function FoodComa() {
   );
 }
 
-export default FoodComa;
+export default Home;

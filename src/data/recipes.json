@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "Thai Sweet Chili Sauce",
+    "ingredients": [
+      "Fresh Red Chilies",
+      "Water",
+      "Rice Vinegar",
+      "Sugar",
+      "Hot Chili Flakes",
+      "Fish Sauce",
+      "Ginger",
+      "Garlic",
+      "Corn Starch"
+    ],
+    "image": "https://www.chilipeppermadness.com/wp-content/uploads/2023/07/Thai-Sweet-Chili-Sauce-Recipe8.jpg",
+    "source": "https://www.chilipeppermadness.com/recipes/thai-sweet-chili-sauce/"
+  },
+  {
+    "id": "2",
+    "title": "Kimchi Jjigae",
+    "ingredients": [
+      "Water",
+      "Dried Anchovies",
+      "Dried Kelp",
+      "Oil",
+      "Yellow Onion",
+      "Garlic",
+      "Kimchi and Kimchi Juice",
+      "Pork Belly",
+      "Green Onion",
+      "Gochugaru Powder (Korean Chili Powder)",
+      "Gochujang (Korean Red Chili Paste)",
+      "Sesame Oil",
+      "Soy Sauce",
+      "Sugar",
+      "Firm Tofu",
+      "Salt",
+      "Ground Black Pepper"
+    ],
+    "image": "https://rasamalaysia.com/wp-content/uploads/2022/08/kimchi-jjigae-1024x1536.jpg",
+    "source": "https://rasamalaysia.com/easy-kimchi-jjigae/"
+  }
+]

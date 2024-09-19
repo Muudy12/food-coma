@@ -1,0 +1,44 @@
+.header {
+  &__nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba($color: #eb6788, $alpha: 1);
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    height: 4rem;
+  }
+
+  & .nav {
+    &__mu-port {
+      width: 5rem;
+      cursor: pointer;
+    }
+
+    &__list {
+      margin: 0;
+      height: 100%;
+
+      &-item {
+        height: 100%;
+
+        & a {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          box-sizing: border-box;
+          margin: 0 1rem;
+          padding: 0.1rem;
+
+          &:hover,
+          &:active {
+            border-bottom: 0.25rem solid black;
+            color: white;
+            font-weight: 500;
+            transition: all 0.1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
