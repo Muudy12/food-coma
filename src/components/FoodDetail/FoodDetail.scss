@@ -149,11 +149,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45%;
+    height: 50%;
+    margin: 1rem 0;
 
     &-image {
-      height: 90%;
-      width: 30%;
+      height: 100%;
+      width: 15rem;
       margin: 2rem 0;
     }
 
@@ -166,6 +167,7 @@
         overflow-x: scroll;
         scrollbar-width: thin;
         scrollbar-color: transparent transparent;
+        width: 50%;
 
       & li {
         list-style-type: square;
