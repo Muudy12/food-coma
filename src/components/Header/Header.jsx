@@ -14,7 +14,7 @@ function Header() {
           />
           <ul className="nav__list">
             <li className="nav__list-item">
-              <a className="" href="/food-coma">
+              <a className="" href="/">
                 Dashboard
               </a>
             </li>

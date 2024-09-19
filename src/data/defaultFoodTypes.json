@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Ramen",
+    "image": "../src/assets/images/ramen-cartoon-rb.png",
+    "funFact": "Ramen is a Japanese noodle soup consisting of Chinese-style wheat noodles, a flavorful broth, and various toppings like pork, eggs, and vegetables. Fun fact: Instant ramen, invented by Momofuku Ando in 1958, was considered a luxury item in Japan when it first came out, costing more than fresh noodles!"
+  },
+  {
+    "id": "2",
+    "name": "Salad",
+    "image": "../src/assets/images/salad-cartoon-rb.png",
+    "funFact": "Salad is a versatile dish typically made with a mixture of raw or cooked vegetables, fruits, grains, and proteins, often served with a dressing. Fun fact: The word 'salad' comes from the Latin 'sal,' meaning salt, as ancient Romans used salty dressings to season their greens! The earliest known salads were enjoyed by the Greeks and Romans more than 2,000 years ago."
+  },
+  {
+    "id": "3",
+    "name": "Pasta",
+    "image": "../src/assets/images/pasta-cartoon-rb.png",
+    "funFact": "Pasta is a traditional Italian dish made from unleavened dough of wheat flour mixed with water or eggs, then shaped and cooked. Fun fact: There are over 600 different pasta shapes worldwide, and each is designed to complement different types of sauces! The word 'pasta' comes from the Italian word for 'dough' or 'paste.' Contrary to popular belief, pasta's origins may date back to ancient China, though it was popularized and perfected in Italy."
+  },
+  {
+    "id": "4",
+    "name": "Smoothie",
+    "image": "../src/assets/images/smoothie-cartoon-rb.png",
+    "funFact": "A smoothie is a thick, blended beverage made from fruits, vegetables, and often additional ingredients like yogurt, milk, or protein powder. Fun fact: The term 'smoothie' became popular in the 1960s during the rise of health food trends in the U.S., but similar blended drinks have existed for centuries in cultures around the world! The first modern smoothies were inspired by Brazilian fruit drinks called 'batidas.'"
+  },
+  {
+    "id": "5",
+    "name": "Cupcake",
+    "image": "../src/assets/images/cupcake-cartoon-rb.png",
+    "funFact": "Cupcakes are small, single-serving cakes typically baked in a paper liner and often decorated with frosting and sprinkles. Fun fact: The term 'cupcake' dates back to the 19th century, when cakes were often measured using a cup for ingredients, leading to the name! Before muffin tins were available, they were baked in individual pottery cups, hence the name 'cupcake.'"
+  },
+  {
+    "id": "6",
+    "name": "Burger",
+    "image": "../src/assets/images/burger-cartoon-rb.png",
+    "funFact": "A burger is a sandwich typically made of a ground meat patty, often beef, placed between two halves of a bun and topped with ingredients like lettuce, tomato, cheese, and condiments. Fun fact: The origin of the hamburger is widely debated, but many credit its creation to the late 19th century in the U.S. It was named after Hamburg, Germany, where minced beef patties (Hamburg steaks) were popular. Despite its humble beginnings, burgers are now a global fast-food staple, with endless variations!"
+  },
+  {
+    "id": "7",
+    "name": "Steak",
+    "image": "../src/assets/images/steak-cartoon-rb.png",
+    "funFact": "Steak is a high-quality cut of meat, usually beef, that is typically cooked by grilling, pan-searing, or broiling. Fun fact: The word 'steak' comes from the Old Norse word 'steik,'' meaning 'to roast on a spit.'' Steak has been a popular dish since the Middle Ages, and its modern fame is often linked to the rise of American steakhouses in the 19th century. Different cuts like ribeye, sirloin, and filet mignon offer distinct flavors and textures."
+  },
+  {
+    "id": "8",
+    "name": "Pizza",
+    "image": "../src/assets/images/pizza-cartoon-rb.png",
+    "funFact": "Pizza is a savory Italian dish made with a round, flat dough base topped with tomato sauce, cheese, and various toppings, then baked to perfection. Fun fact: Pizza as we know it today originated in Naples, Italy, in the late 18th century. The Margherita pizza, one of the most famous varieties, was created to honor Queen Margherita of Savoy, with its toppings (tomato, mozzarella, and basil) representing the colors of the Italian flag! Today, pizza is a global favorite, with countless regional variations."
+  }
+]

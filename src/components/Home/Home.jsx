@@ -1,38 +1,30 @@
 import "./Home.scss";
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import ThinkEmoji from "../../assets/images/thinkingFace-cartoon-rb.png";
 import DefaultSpin from "../../assets/images/defaultSpin-rb.png";
 import DownArrow from "../../assets/images/arrowDown-cartoon-rb.png";
-import RamenImg from "../../assets/images/ramen-cartoon-rb.png";
-import SaladImg from "../../assets/images/salad-cartoon-rb.png";
-import PastaImg from "../../assets/images/pasta-cartoon-rb.png";
-import SmoothieImg from "../../assets/images/smoothie-cartoon-rb.png";
-import CupcakeImg from "../../assets/images/cupcake-cartoon-rb.png";
-import BurgerImg from "../../assets/images/burger-cartoon-rb.png";
-import SteakImg from "../../assets/images/steak-cartoon-rb.png";
-import PizzaImg from "../../assets/images/pizza-cartoon-rb.png";
+import defaultFood from "../../data/defaultFoodTypes.json";
+import FoodDetail from "../FoodDetail/FoodDetail";
 
 function Home() {
-  const navigate = useNavigate();
   const [isSpin, setIsSpin] = useState(false);
-  const spinWheel = useRef();
+  const spinWheel = useRef("");
   const [rotationDegree, setRotationDegree] = useState(0);
   const [previousDegree, setPreviousDegree] = useState(0);
   const [selected, setSelected] = useState("");
-  const downArrow = useRef();
+  const downArrow = useRef("");
   const [selectedFood, setSelectedFood] = useState("");
   const [isModal, setIsModal] = useState(false);
 
   // wheel refs:
-  const ramen = useRef();
-  const salad = useRef();
-  const pasta = useRef();
-  const smoothie = useRef();
-  const cupcake = useRef();
-  const burger = useRef();
-  const steak = useRef();
-  const pizza = useRef();
+  const ramen = useRef("");
+  const salad = useRef("");
+  const pasta = useRef("");
+  const smoothie = useRef("");
+  const cupcake = useRef("");
+  const burger = useRef("");
+  const steak = useRef("");
+  const pizza = useRef("");
 
   useEffect(() => {
     const wheelElement = spinWheel.current;
@@ -139,65 +131,52 @@ function Home() {
   }
 
   function showFood(ref) {
+    let food;
     switch (ref.textContent.toLowerCase()) {
       case "ramen":
-        setSelectedFood({
-          name: ref.textContent,
-          img: RamenImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find((f) => f.name.toLowerCase() === "ramen");
         break;
       case "salad":
-        setSelectedFood({
-          name: ref.textContent,
-          img: SaladImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find((f) => f.name.toLowerCase() === "salad");
         break;
       case "pasta":
-        setSelectedFood({
-          name: ref.textContent,
-          img: PastaImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find((f) => f.name.toLowerCase() === "pasta");
         break;
       case "smoothie":
-        setSelectedFood({
-          name: ref.textContent,
-          img: SmoothieImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find(
+          (f) => f.name.toLowerCase() === "smoothie"
+        );
         break;
       case "cupcake":
-        setSelectedFood({
-          name: ref.textContent,
-          img: CupcakeImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find(
+          (f) => f.name.toLowerCase() === "cupcake"
+        );
         break;
       case "burger":
-        setSelectedFood({
-          name: ref.textContent,
-          img: BurgerImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find((f) => f.name.toLowerCase() === "burger");
         break;
       case "steak":
-        setSelectedFood({
-          name: ref.textContent,
-          img: SteakImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find((f) => f.name.toLowerCase() === "steak");
         break;
       case "pizza":
-        setSelectedFood({
-          name: ref.textContent,
-          img: PizzaImg,
-          text: "Salads are a versatile and nutritious meal option that can be customized to suit a variety of tastes and dietary needs. They typically consist of a base of leafy greens, such as lettuce, spinach, or kale, and can be enriched with a variety of other vegetables, fruits, proteins (like chicken, tofu, or beans), nuts, seeds, and dressings. Salads can be served as appetizers, side dishes, or main courses.",
-        });
+        food = defaultFood.find((f) => f.name.toLowerCase() === "pizza");
         break;
       default:
         break;
+    }
+
+    if (food) {
+      setSelectedFood({
+        name: food.name,
+        img: food.image,
+        text: food.funFact,
+      });
+    } else {
+      setSelectedFood({
+        name: "",
+        img: "",
+        text: "",
+      });
     }
   }
 
@@ -275,26 +254,7 @@ function Home() {
         </div>
 
         {selected && isModal && (
-          <div className="food-coma__modal modal">
-            <div className="modal__container">
-              <button className="modal__close-btn" onClick={closeModal}>
-                CLOSE
-              </button>
-              <div className="modal-title">
-                <img
-                  className="modal-title__img"
-                  src={selectedFood.img}
-                  alt={selectedFood.name}
-                />
-                <div className="modal-title__details details">
-                  <h3 className="details__heading">
-                    You have landed on '{selectedFood.name}' recipes!
-                  </h3>
-                  <p className="details__text">{selectedFood.text}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FoodDetail closeModal={closeModal} selectedFood={selectedFood} />
         )}
       </div>
     </>

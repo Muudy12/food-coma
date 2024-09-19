@@ -1,44 +1,131 @@
 [
   {
     "id": "1",
-    "title": "Thai Sweet Chili Sauce",
+    "type": "Ramen",
+    "title": "Quick Homemade Ramen",
     "ingredients": [
-      "Fresh Red Chilies",
-      "Water",
-      "Rice Vinegar",
-      "Sugar",
-      "Hot Chili Flakes",
-      "Fish Sauce",
-      "Ginger",
-      "Garlic",
-      "Corn Starch"
+      "Ramen noodles (our classic Maruchan package is all we need, sans the seasoning!)",
+      "Garlic and ginger",
+      "Broth (chicken or veg)",
+      "Dried shiitake mushrooms",
+      "Veggies like carrots or kale",
+      "All your favorite toppings like some panko, egg, chili oil, etc."
     ],
-    "image": "https://www.chilipeppermadness.com/wp-content/uploads/2023/07/Thai-Sweet-Chili-Sauce-Recipe8.jpg",
-    "source": "https://www.chilipeppermadness.com/recipes/thai-sweet-chili-sauce/"
+    "image": "https://pinchofyum.com/wp-content/uploads/Homemade-Ramen-3-3-960x1440.jpg",
+    "source": "https://pinchofyum.com/quick-homemade-ramen"
   },
   {
     "id": "2",
-    "title": "Kimchi Jjigae",
+    "type": "Salad",
+    "title": "Everyday Green Salad",
     "ingredients": [
-      "Water",
-      "Dried Anchovies",
-      "Dried Kelp",
-      "Oil",
-      "Yellow Onion",
+      "Fresh greens",
+      "English cucumber",
+      "Red onion",
+      "Nuts/seeds",
+      "Olive oil",
+      "Lemon juice (or vinegar)",
+      "Dijon mustard",
       "Garlic",
-      "Kimchi and Kimchi Juice",
-      "Pork Belly",
-      "Green Onion",
-      "Gochugaru Powder (Korean Chili Powder)",
-      "Gochujang (Korean Red Chili Paste)",
-      "Sesame Oil",
-      "Soy Sauce",
-      "Sugar",
-      "Firm Tofu",
-      "Salt",
-      "Ground Black Pepper"
+      "Salt and black pepper"
     ],
-    "image": "https://rasamalaysia.com/wp-content/uploads/2022/08/kimchi-jjigae-1024x1536.jpg",
-    "source": "https://rasamalaysia.com/easy-kimchi-jjigae/"
+    "image": "https://www.gimmesomeoven.com/wp-content/uploads/2018/06/Everyday-Green-Salad-Recipe-3.jpg",
+    "source": "https://www.gimmesomeoven.com/everyday-salad-recipe/"
+  },
+  {
+    "id": "3",
+    "type": "Pasta",
+    "title": "Rich Pasta for the Poor Kitchen",
+    "ingredients": [
+      "1 (8 ounce) package dry spaghetti",
+      "8 tablespoons butter",
+      "2 tablespoons minced garlic",
+      "1 tablespoon chopped fresh parsley",
+      "salt and freshly ground black pepper to taste",
+      "1 pinch cayenne pepper, or to taste (optional)",
+      "1 cup grated Parmesan cheese"
+    ],
+    "image": "https://www.allrecipes.com/thmb/oWrKte1auLsqVEcnxa8z1vCZdDU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/67700_RichPastaforthePoorKitchen_ddmfs_4x3_2284-220302ec8328442096df370dede357d7.jpg",
+    "source": "https://www.allrecipes.com/recipe/67700/rich-pasta-for-the-poor-kitchen/"
+  },
+  {
+    "id": "4",
+    "type": "Smoothie",
+    "title": "Banana Smoothie",
+    "ingredients": [
+      "Banana",
+      "Half an orange",
+      "Plain or Greek yogurt",
+      "Water or milk"
+    ],
+    "image": "https://www.inspiredtaste.net/wp-content/uploads/2016/06/Banana-Smoothie-Recipe-4-1200.jpg",
+    "source": "https://www.inspiredtaste.net/19907/simple-banana-smoothie-recipe/"
+  },
+  {
+    "id": "5",
+    "type": "Cupcake",
+    "title": "Vanilla Cupcakes",
+    "ingredients": [
+      "2 1/2 cups (325g) all purpose flour",
+      "2 cups (414g) sugar",
+      "3 tsp baking powder",
+      "1 tsp salt",
+      "1 cup (240ml) milk",
+      "1/2 cup (120ml) vegetable oil",
+      "1 tbsp vanilla extract",
+      "2 large eggs",
+      "1 cup (240ml) water",
+      "Frosting: 1 cup (224g) unsalted butter, room temperature",
+      "Frosting: 4 cups (460g) powdered sugar",
+      "Frosting: 1 1/2 tsp vanilla extract",
+      "Frosting: 2–3 tbsp (30-45ml) water or milk",
+      "Frosting: pinch of salt"
+    ],
+    "image": "https://www.lifeloveandsugar.com/wp-content/uploads/2017/01/Moist-Vanilla-Cupcakes5.jpg",
+    "source": "https://www.lifeloveandsugar.com/moist-vanilla-cupcakes/"
+  },
+  {
+    "id": "6",
+    "type": "Burger",
+    "title": "Perfect Basic Burger",
+    "ingredients": [
+      "1 large egg",
+      "½ teaspoon salt",
+      "½ teaspoon ground black pepper",
+      "1 pound ground beef",
+      "½ cup fine dry bread crumbs"
+    ],
+    "image": "https://www.allrecipes.com/thmb/8fe_5pLNz2eHcpknNhL52fdq5hE=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25473-the-perfect-basic-burger-DDMFS-4x3-56eaba3833fd4a26a82755bcd0be0c54.jpg",
+    "source": "https://www.allrecipes.com/recipe/25473/the-perfect-basic-burger/"
+  },
+  {
+    "id": "7",
+    "type": "Steak",
+    "title": "Sirloin Steak with Garlic Butter",
+    "ingredients": [
+      "½ cup butter",
+      "4 cloves garlic, minced",
+      "2 teaspoons garlic powder",
+      "4 pounds beef top sirloin steaks",
+      "salt and pepper to taste"
+    ],
+    "image": "https://www.allrecipes.com/thmb/mk26K6uuWZIKfD0MuxwYmUFwLQw=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-14554-sirloin-steak-with-garlic-butter-hero-4x3-d12fa79836754fcf850388e4677bbf55.jpg",
+    "source": "https://www.allrecipes.com/recipe/14554/sirloin-steak-with-garlic-butter/"
+  },
+  {
+    "id": "8",
+    "type": "Pizza",
+    "title": "Homemade Pizza Dough",
+    "ingredients": [
+      "1 cup warm water (110 degrees F/45 degrees C)",
+      "1 (.25 ounce) package active dry yeast",
+      "1 teaspoon white sugar",
+      "2 ½ cups bread flour",
+      "2 tablespoons olive oil",
+      "1 teaspoon salt",
+      "Toppings of your choice"
+    ],
+    "image": "https://www.allrecipes.com/thmb/fu-ChBPkr18Y55dcBf7LTaVK9oI=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20171-quick-and-easy-pizza-crust-VilmaNg-4x3-f3d3bfe73e3a47b6b65a7da6de3f213d.jpg",
+    "source": "https://www.allrecipes.com/recipe/20171/quick-and-easy-pizza-crust/"
   }
 ]
