@@ -10,7 +10,7 @@ function Header() {
             className="nav__mu-port"
             src={MuPortLogo}
             alt="Mu Portfolio Logo"
-            onClick={() => navigate("/")}
+            onClick={() => window.open("https://main--muport.netlify.app/")}
           />
           <ul className="nav__list">
             <li className="nav__list-item">
