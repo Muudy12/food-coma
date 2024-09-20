@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 
   &::before {
     content: "";
@@ -17,6 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    pointer-events: none;
   }
 
   &__container {
@@ -24,17 +26,17 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    width: 90vw;
+    height: 90%;
+    width: 90%;
     border-radius: 2rem;
     box-shadow: 0 0.2rem 0.5rem 0 rgba(39, 39, 39, 0.429);
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1rem 1rem 0;
     position: relative;
-    overflow: hidden;
     transform: scale(0);
     opacity: 0;
     animation: zoomIn 0.3s forwards;
+    overflow: hidden;
   }
 
   &__close-btn {
@@ -79,10 +81,10 @@
       flex-direction: column;
       box-sizing: border-box;
       padding: 0 2rem;
+      width: 100%;
 
       & .details__heading {
-        margin-bottom: 0;
-        margin-top: 0.8rem;
+        margin: 0;
       }
 
       & .details__text {
@@ -96,6 +98,9 @@
 
 .recipe-list {
   display: flex;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .recipe-item {
@@ -123,6 +128,10 @@
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 
   & .title {
     display: flex;
@@ -151,6 +160,7 @@
     align-items: center;
     height: 50%;
     margin: 1rem 0;
+    flex: 1;
 
     &-image {
       height: 100%;
@@ -159,15 +169,15 @@
     }
 
     &__ingredients {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 90%;
-        margin: 2rem 0;
-        overflow-x: scroll;
-        scrollbar-width: thin;
-        scrollbar-color: transparent transparent;
-        width: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 90%;
+      margin: 2rem 0;
+      overflow-x: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+      width: 50%;
 
       & li {
         list-style-type: square;
@@ -185,7 +195,7 @@
     cursor: pointer;
 
     &:hover {
-        color: blue;
+      color: blue;
     }
   }
 }
