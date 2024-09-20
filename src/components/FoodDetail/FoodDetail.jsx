@@ -95,6 +95,116 @@ function RecipeList({ typeRecipes }) {
               </div>
             );
           })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+              {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
         </div>
       )}
       {selected && (
