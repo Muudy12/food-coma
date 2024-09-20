@@ -31,7 +31,8 @@
           padding: 0.1rem;
 
           &:hover,
-          &:active {
+          &:active,
+          &.active {
             border-bottom: 0.25rem solid black;
             color: white;
             font-weight: 500;
