@@ -22,20 +22,22 @@ function FoodDetail({ closeModal, selectedFood }) {
           <button className="modal__close-btn" onClick={closeModal}>
             CLOSE
           </button>
-          <div className="modal-title">
-            <img
-              className="modal-title__img"
-              src={selectedFood.img}
-              alt={selectedFood.name}
-            />
-            <div className="modal-title__details details">
-              <h3 className="details__heading">
-                You have landed on '{selectedFood.name}' recipes!
-              </h3>
-              <p className="details__text">{selectedFood.text}</p>
+          <div className="modal__content-container">
+            <div className="modal-title">
+              <img
+                className="modal-title__img"
+                src={selectedFood.img}
+                alt={selectedFood.name}
+              />
+              <div className="modal-title__details details">
+                <h3 className="details__heading">
+                  You have landed on '{selectedFood.name}' recipes!
+                </h3>
+                <p className="details__text">{selectedFood.text}</p>
+              </div>
             </div>
+            <RecipeList typeRecipes={typeRecipes} />
           </div>
-          <RecipeList typeRecipes={typeRecipes} />
         </div>
       </div>
     </>
@@ -49,6 +51,39 @@ function RecipeList({ typeRecipes }) {
     <>
       {!selected && (
         <div className="recipe-list">
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
+          {typeRecipes?.map((r) => {
+            return (
+              <div
+                className="recipe-item"
+                key={r.id}
+                onClick={() => setSelected(r)}
+              >
+                <img src={r.image} alt={`image for the recipe ${r.title}`} />
+              </div>
+            );
+          })}
           {typeRecipes?.map((r) => {
             return (
               <div
