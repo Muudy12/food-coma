@@ -184,7 +184,7 @@ function Home() {
 
   return (
     <>
-      <div className="food-coma">
+      <main className="food-coma">
         <div className="food-coma__main main">
           <div className="main__title">
             <h1 className="main__title-header">
@@ -256,7 +256,7 @@ function Home() {
         {selected && isModal && (
           <FoodDetail closeModal={closeModal} selectedFood={selectedFood} />
         )}
-      </div>
+      </main>
     </>
   );
 }

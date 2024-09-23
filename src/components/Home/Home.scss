@@ -1,24 +1,16 @@
 @use "../../utils/global.scss" as *;
 
 .food-coma {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
     position: relative;
-
+    height: fit-content;
   
     & .main {
       display: flex;
       flex-direction: column;
       background-color: rgba(213, 100, 123, 0.429);
       align-items: center;
-      max-height: fit-content;
-      min-height: 100vh;
-
-      @include tablet {
-        overflow-y: scroll;
-      }
+      height: 100%;
+      overflow: hidden;
   
       &__title {
         display: flex;
