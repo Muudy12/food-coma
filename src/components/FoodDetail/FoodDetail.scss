@@ -47,6 +47,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     height: 100%;
+    scrollbar-width: none;
 
     @include tablet {
       height: 90%;
@@ -262,6 +263,7 @@
         overflow-x: scroll;
         margin: 0;
         align-items: start;
+        scrollbar-width: none;
       }
 
       @include desktop {

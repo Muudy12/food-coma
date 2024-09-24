@@ -188,10 +188,10 @@ function Home() {
         <div className="food-coma__main main">
           <div className="main__title">
             <h1 className="main__title-header">
-              Got Food {selectedFood ? selectedFood.name : "Coma"}?
+              {selectedFood ? `Not a fan of ${selectedFood.name}` : "Got Food Coma"}?
             </h1>
             <p className="main__title-text">
-              Then it is time you spin the wheel!
+              Spin the Wheel
             </p>
           </div>
 
