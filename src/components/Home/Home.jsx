@@ -143,14 +143,10 @@ function Home() {
         food = defaultFood.find((f) => f.name.toLowerCase() === "pasta");
         break;
       case "smoothie":
-        food = defaultFood.find(
-          (f) => f.name.toLowerCase() === "smoothie"
-        );
+        food = defaultFood.find((f) => f.name.toLowerCase() === "smoothie");
         break;
       case "cupcake":
-        food = defaultFood.find(
-          (f) => f.name.toLowerCase() === "cupcake"
-        );
+        food = defaultFood.find((f) => f.name.toLowerCase() === "cupcake");
         break;
       case "burger":
         food = defaultFood.find((f) => f.name.toLowerCase() === "burger");
@@ -188,71 +184,72 @@ function Home() {
         <div className="food-coma__main main">
           <div className="main__title">
             <h1 className="main__title-header">
-              {selectedFood ? `Not a fan of ${selectedFood.name}` : "Got Food Coma"}?
+              {selectedFood
+                ? `Not a fan of ${selectedFood.name}`
+                : "Got Food Coma"}
+              ?
             </h1>
-            <p className="main__title-text">
-              Spin the Wheel
-            </p>
+            <p className="main__title-text">Spin the Wheel</p>
           </div>
-
-          <div className="main__wheel wheel">
-            <div className="wheel__spin food">
-              <div
-                ref={spinWheel}
-                className="wheel__spin-default-img"
-                style={
-                  isSpin
-                    ? {
-                        backgroundImage: `url(${DefaultSpin}`,
-                        animation: `spinWheel 8s ease-in-out forwards`,
-                      }
-                    : {
-                        backgroundImage: `url(${DefaultSpin}`,
-                        rotate: `${rotationDegree}deg`,
-                      }
-                }
-              >
-                <p ref={ramen} className={`food-ramen`}>
-                  Ramen
-                </p>
-                <p ref={salad} className={`food-salad`}>
-                  Salad
-                </p>
-                <p ref={pasta} className={`food-pasta`}>
-                  Pasta
-                </p>
-                <p ref={smoothie} className={`food-smoothie`}>
-                  Smoothie
-                </p>
-                <p ref={cupcake} className={`food-cupcake`}>
-                  Cupcake
-                </p>
-                <p ref={burger} className={`food-burger`}>
-                  Burger
-                </p>
-                <p ref={steak} className={`food-steak`}>
-                  Steak
-                </p>
-                <p ref={pizza} className={`food-pizza`}>
-                  Pizza
-                </p>
+          <div className="main__wheel-container">
+            <div className="main__wheel wheel">
+              <div className="wheel__spin food">
+                <div
+                  ref={spinWheel}
+                  className="wheel__spin-default-img"
+                  style={
+                    isSpin
+                      ? {
+                          backgroundImage: `url(${DefaultSpin}`,
+                          animation: `spinWheel 8s ease-in-out forwards`,
+                        }
+                      : {
+                          backgroundImage: `url(${DefaultSpin}`,
+                          rotate: `${rotationDegree}deg`,
+                        }
+                  }
+                >
+                  <p ref={ramen} className={`food-ramen`}>
+                    Ramen
+                  </p>
+                  <p ref={salad} className={`food-salad`}>
+                    Salad
+                  </p>
+                  <p ref={pasta} className={`food-pasta`}>
+                    Pasta
+                  </p>
+                  <p ref={smoothie} className={`food-smoothie`}>
+                    Smoothie
+                  </p>
+                  <p ref={cupcake} className={`food-cupcake`}>
+                    Cupcake
+                  </p>
+                  <p ref={burger} className={`food-burger`}>
+                    Burger
+                  </p>
+                  <p ref={steak} className={`food-steak`}>
+                    Steak
+                  </p>
+                  <p ref={pizza} className={`food-pizza`}>
+                    Pizza
+                  </p>
+                </div>
+                <img
+                  ref={downArrow}
+                  className="food__arrow"
+                  src={DownArrow}
+                  alt="Arrow Down to show which type of food is selected"
+                />
               </div>
               <img
-                ref={downArrow}
-                className="food__arrow"
-                src={DownArrow}
-                alt="Arrow Down to show which type of food is selected"
+                className="wheel__thinking-img"
+                src={ThinkEmoji}
+                alt="Thinking face emoji for spin the wheel center"
+                onClick={spinTheWheel}
               />
             </div>
-            <img
-              className="wheel__thinking-img"
-              src={ThinkEmoji}
-              alt="Thinking face emoji for spin the wheel center"
-              onClick={spinTheWheel}
-            />
           </div>
         </div>
-
         {selected && isModal && (
           <FoodDetail closeModal={closeModal} selectedFood={selectedFood} />
         )}

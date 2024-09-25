@@ -27,7 +27,7 @@ function Header() {
             className="nav__mu-port"
             src={MuPortLogo}
             alt="Mu Portfolio Logo"
-            onClick={() => window.location.href="https://main--muport.netlify.app/"}
+            onClick={() => window.location.href="https://muport.netlify.app/"}
           />
           <ul className="nav__list">
             <li className="nav__list-item">
